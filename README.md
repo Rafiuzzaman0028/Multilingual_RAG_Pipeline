@@ -24,17 +24,20 @@ A multilingual Retrieval-Augmented Generation (RAG) system for processing Bengal
 
 Install dependencies:
 
-bash
-pip install -r requirements.txt
+1. python
+   ```bash
+   pip install -r requirements.txt
+
 
 Usage
 1. Process PDF Documents
-python
-from pdf_processing import extract_text_from_pdf
-raw_text = extract_text_from_pdf("data/HSC26-Bangla1st-Paper.pdf")
+   ```python
+   from pdf_processing import extract_text_from_pdf
+   raw_text = extract_text_from_pdf("data/HSC26-Bangla1st-Paper.pdf")
 
-2. Run the RAG Pipeline
-python
+
+3. Run the RAG Pipeline
+```python
 from pipeline import BengaliRAGPipeline
 
 pipeline = BengaliRAGPipeline()
@@ -63,7 +66,12 @@ text
 ├── data/                    # Sample documents
 ├── requirements.txt         # Python dependencies
 └── README.md
-Dependencies
+
+
+```
+ Dependencies
+   ```bash
+   
 Python 3.8+
 
 PyMuPDF (for PDF processing)
@@ -75,3 +83,5 @@ FAISS
 Transformers (HuggingFace)
 
 BanglaT5 or other Bengali language models
+
+
